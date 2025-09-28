@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouldering Training Cards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .session-header {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: -10px -10px 20px -10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .session-a .session-header {
+            background: linear-gradient(45deg, #4834d4, #686de0);
+        }
+        
+        .session-b .session-header {
+            background: linear-gradient(45deg, #ff9ff3, #f368e0);
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        
+        .time-badge {
+            background: #3498db;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-left: 10px;
+        }
+        
+        .exercise-list {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        
+        .exercise-list li {
+            margin-bottom: 8px;
+            padding-left: 5px;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .warning {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            color: #721c24;
+        }
+        
+        .rest-note {
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .grade-progression {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .grade-box {
+            background: #e74c3c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            min-width: 80px;
+        }
+        
+        .grade-v0 { background: #27ae60; }
+        .grade-v1 { background: #f39c12; }
+        .grade-v2 { background: #e74c3c; }
+        .grade-v3 { background: #8e44ad; }
+        .grade-v4 { background: #2c3e50; }
+        
+        .quick-ref {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        
+        .quick-ref h3 {
+            margin-top: 0;
+            color: #155724;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .card {
+                padding: 15px;
+            }
+            
+            .grade-progression {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧗‍♀️ V2-V3 Training Program 🧗‍♂️</h1>
+        
+        <!-- Session A Card -->
+        <div class="card session-a">
+            <div class="session-header">SESSION A: Volume & Technique</div>
+            
+            <div class="section">
+                <div class="section-title">Warm-up <span class="time-badge">15-20 min</span></div>
+                <div class="exercise-list">
+                    <ul>
+                        <li>5 min easy traversing or juggy V0s</li>
+                        <li>Dynamic stretching: shoulders, hips, ankles</li>
+                        <li>3-4 easy climbs, gradually increasing difficulty</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Pyramid Climbing <span class="time-badge">30 min</span></div>
+                <div class="grade-progression">
+                    <div class="grade-box grade-v0">3x V0</div>
+                    <div class="grade-box grade-v1">4x V1</div>
+                    <div class="grade-box grade-v2">6x V2</div>
+                    <div class="grade-box grade-v3">4x V3</div>
+                    <div class="grade-box grade-v4">2x V4</div>
+                </div>
+                <p class="rest-note">Rest: 2 min (easy), 3-4 min (harder attempts)</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Technical Focus <span class="time-badge">15-20 min</span></div>
+                <div class="exercise-list">
+                    <ul>
+                        <li><strong>Flagging</strong> & body positioning</li>
+                        <li><strong>Heel hooks</strong> & toe hooks</li>
+                        <li><strong>Dynamic moves</strong> (small dynos)</li>
+                        <li><strong>Rest positions</strong> & shake-outs</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight">
+                <strong>Focus:</strong> Smooth movement, efficiency, different styles
+            </div>
+        </div>
+        
+        <!-- Session B Card -->
+        <div class="card session-b">
+            <div class="session-header">SESSION B: Power & Projecting</div>
+            
+            <div class="section">
+                <div class="section-title">Warm-up <span class="time-badge">15-20 min</span></div>
+                <p>Same as Session A</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Project Work <span class="time-badge">25-30 min</span></div>
+                <div class="exercise-list">
+                    <ul>
+                        <li>Choose <strong>2-3 V3 problems</strong></li>
+                        <li><strong>8-10 minutes per problem</strong></li>
+                        <li>Break down hard sections</li>
+                        <li>Practice individual moves</li>
+                    </ul>
+                </div>
+                <p class="rest-note">Rest: 5+ minutes between attempts</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Power Training <span class="time-badge">15-20 min</span></div>
+                <div class="exercise-list">
+                    <ul>
+                        <li><strong>4x6 Move Traverses</strong> (3 min rest)</li>
+                        <li><strong>Campus/System Board</strong> (if available)</li>
+                        <li><strong>Core Circuit</strong> (3 rounds):
+                            <ul style="margin-top: 8px;">
+                                <li>30s dead hang</li>
+                                <li>10 hollow body rocks</li>
+                                <li>30s plank</li>
+                                <li>1 min rest</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="highlight">
+                <strong>Focus:</strong> Maximum effort, full recovery, specific weaknesses
+            </div>
+        </div>
+        
+        <!-- Finger Training Card -->
+        <div class="card">
+            <div class="session-header" style="background: linear-gradient(45deg, #00b894, #00cec9);">FINGER TRAINING (Optional)</div>
+            
+            <div class="warning">
+                <strong>⚠️ Prerequisites:</strong> Only if you can hang comfortably on 20mm edge + warm up with 10-15 min climbing first
+            </div>
+            
+            <div class="section">
+                <div class="section-title">Simple Routine <span class="time-badge">2-3x/week</span></div>
+                <div class="exercise-list">
+                    <ul>
+                        <li><strong>6 sets</strong> of 10-second hangs</li>
+                        <li><strong>Large holds</strong> (30mm+ edge or jugs)</li>
+                        <li><strong>50 seconds</strong> rest between hangs</li>
+                        <li><strong>Form focus:</strong> shoulders engaged, slight arm bend</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="warning">
+                <strong>🛑 Safety:</strong> Never on consecutive days • Stop if form breaks • No sharp pain
+            </div>
+        </div>
+        
+        <!-- Quick Reference -->
+        <div class="card">
+            <div class="quick-ref">
+                <h3>🎯 Quick Reference</h3>
+                <p><strong>Weekly:</strong> 2 climbing sessions + optional finger/cross training</p>
+                <p><strong>Rest Days:</strong> Listen to your body - recovery is training!</p>
+                <p><strong>Progression:</strong> Quality movement > desperate sends</p>
+                <p><strong>Safety:</strong> Check landings • Learn to fall • Stop if it hurts</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
